@@ -4,6 +4,7 @@ import { MongoClient, ServerApiVersion } from "mongodb";
 
 import { router } from "./router.js";
 
+// Remplacer par l'URL de votre cluster
 const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@test.jfgb8i5.mongodb.net/?retryWrites=true&w=majority&appName=test`;
 
 export const client = new MongoClient(uri, {
